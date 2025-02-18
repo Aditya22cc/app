@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Signal Transmitter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flash Signal Transmitter</h1>
+        <div class="input-section">
+            <textarea id="messageInput" placeholder="Enter your message to transmit..." rows="3"></textarea>
+        </div>
+        <div class="flashlight-status">
+            <div class="status-indicator" id="statusIndicator"></div>
+            <p id="statusText">Ready to transmit</p>
+        </div>
+        <div class="binary-display" id="binaryDisplay"></div>
+        <div class="controls">
+            <button id="startTransmit" class="control-button">
+                Start Transmission
+            </button>
+            <button id="stopTransmit" class="control-button stop" disabled>
+                Stop Transmission
+            </button>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
